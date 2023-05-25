@@ -1,5 +1,31 @@
 # Docsy Example
 
+## Hugo Docsy Example サイト
+
+このリポジトリは、github.com/google/docsy-example をテンプレートにして作成したリポジトリです。
+
+以下のように、go.mod が bootstrap v4.6.2 を指定しているため、最新の Bootstrap 5 を使用していません。
+
+```go
+module github.com/google/docsy-example
+
+go 1.12
+
+require (
+	github.com/FortAwesome/Font-Awesome v0.0.0-20220831210243-d3a7818c253f // indirect
+	github.com/google/docsy v0.5.1 // indirect
+	github.com/twbs/bootstrap v4.6.2+incompatible // indirect
+)
+```
+
+ですが、オリジナルの Docsy (github.com/google/docsy) 0.6.1 は、Bootstrap 5.2 に対応しているため、
+この Docsy サンプルサイトを Bootstrap 5.2 対応の Docsy 0.6.1 対応にします。
+
+
+-----
+
+## Docsy Example
+
 [Docsy][] is a [Hugo theme module][] for technical documentation sites, providing easy
 site navigation, structure, and more. This **Docsy Example Project** uses the Docsy
 theme component as a hugo module and provides a skeleton documentation structure for you to use.
